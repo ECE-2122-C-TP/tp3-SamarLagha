@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>TP3.c</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+.s6 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+TP3.c</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Sam on 27/09/2021.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&lt;stdio.h&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;TP3.h&quot;</span>
+
+<span class="s4">void </span><span class="s1">exo1() {</span>
+    <span class="s4">int </span><span class="s1">a = </span><span class="s5">0</span><span class="s4">, </span><span class="s1">b = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Entrez un entier a :&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">,</span><span class="s1">&amp;a)</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Entrez un entier b :&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">,</span><span class="s1">&amp;b)</span><span class="s4">;</span>
+    <span class="s4">if </span><span class="s1">(a &lt; b) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;l'entier le plus grand est b&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(a &gt; b) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;l'entier le plus grand est a&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">printf(</span><span class="s3">&quot; a et b sont egaux&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s1">}</span>
+
+ <span class="s1">}</span>
+ <span class="s4">void </span><span class="s1">exo2() {</span>
+ <span class="s4">int </span><span class="s1">calculerPerimetreRectangle(</span><span class="s4">int </span><span class="s1">lon</span><span class="s4">, int </span><span class="s1">lar) {</span>
+     <span class="s4">int </span><span class="s1">largeurRectangle1 = </span><span class="s5">0</span><span class="s4">, </span><span class="s1">longueurRectangle1 = </span><span class="s5">0</span><span class="s4">,</span>
+             <span class="s1">largeurRectangle2 = </span><span class="s5">0</span><span class="s4">, </span><span class="s1">longueurRectangle2 = </span><span class="s5">0</span><span class="s4">,</span>
+             <span class="s1">perimetreRectangle1 = </span><span class="s5">0</span><span class="s4">, </span><span class="s1">perimetreRectangle2 = </span><span class="s5">0</span><span class="s4">;</span>
+     <span class="s1">printf(</span><span class="s3">&quot;entrez une valeur pour largeurrectangle1 : </span><span class="s4">\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+     <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;largeurrectangle1)</span><span class="s4">;</span>
+     <span class="s1">printf(</span><span class="s3">&quot;entrez une valeur pour largeurrectangle2 : </span><span class="s4">\n </span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+     <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;largeurrectangle2)</span><span class="s4">;</span>
+     <span class="s1">printf(</span><span class="s3">&quot;entrez une valeur pour longueurrectangle1 : </span><span class="s4">\n </span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+     <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;longueurrectangle1 : </span><span class="s6">\</span><span class="s1">n</span>
+     <span class="s3">&quot;);</span>
+     <span class="s1">printf(</span><span class="s3">&quot;entrez une valeur pour longueurrectangle2 : </span><span class="s4">\n </span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+     <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;longueurrectangle2 : </span><span class="s6">\</span><span class="s1">n</span>
+     <span class="s3">&quot;);</span>
+ <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">exo3() {</span>
+    <span class="s4">const int </span><span class="s1">trois = </span><span class="s5">3</span><span class="s4">;</span>
+    <span class="s4">int </span><span class="s1">entier = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Entrez un nombre entier :&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;entier)</span><span class="s4">;</span>
+
+    <span class="s4">if </span><span class="s1">(entier &gt;= </span><span class="s5">10</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;L'entier est supérieur ou égal à 10.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">printf(</span><span class="s3">&quot;L'entier n'est pas supérieur ou égal à 10.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(entier % trois == </span><span class="s5">0</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;L'entier est un multiple de 3.&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">printf(</span><span class="s3">&quot;L'entier n'est pas un multiple de 3.&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">exo4() {</span>
+    <span class="s4">int </span><span class="s1">age = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">int </span><span class="s1">etudiant = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;entrez votre age  : &quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;age)</span><span class="s4">;</span>
+
+    <span class="s4">if </span><span class="s1">(age &lt; </span><span class="s5">12</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;le tarif enfant est de 4 euros.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">( </span><span class="s5">12 </span><span class="s1">&lt;= age &amp;&amp; age &lt;= </span><span class="s5">17 </span><span class="s1">){</span>
+        <span class="s1">printf(</span><span class="s3">&quot;le tarif jeune est de 6 euros.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(age &lt;=</span><span class="s5">27</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;etes-vous étudiants, 0=oui 1=non </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;etudiant)</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else if </span><span class="s1">(etudiant == </span><span class="s5">0</span><span class="s1">){</span>
+        <span class="s1">printf(</span><span class="s3">&quot;le tarif jeune est de 6 euros.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">( age &gt; </span><span class="s5">65</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;le tarif senior est de 6 euros.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">printf(</span><span class="s3">&quot;le tarif normal est 9 euros.</span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+
+ <span class="s4">void </span><span class="s1">exo5() {</span>
+    <span class="s4">int </span><span class="s1">boisson = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;quel boisson voulez-vous ? Entrez 1 pour icetea, 2 pour oasis, 3 pour coca, 10 pour cafe, 11 pour the. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;boisson)</span><span class="s4">;</span>
+    <span class="s4">if </span><span class="s1">(boisson == </span><span class="s5">1</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;votre boisson est un icetea. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(boisson == </span><span class="s5">2</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;votre boisson est un oasis. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(boisson == </span><span class="s5">3</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;votre boisson est un coca. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(boisson == </span><span class="s5">10</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;votre boisson est un cafe. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(boisson == </span><span class="s5">11</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;votre boisson est un the. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">printf(</span><span class="s3">&quot;Nous n'avons pas compris votre choix. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">exo6() {</span>
+    <span class="s4">float </span><span class="s1">note1 = </span><span class="s5">0.0f</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">note2 = </span><span class="s5">0.0f</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">note3 = </span><span class="s5">0.0f</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Rentrer trois notes comprises entre 0 et 20: </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%f %f %f&quot;</span><span class="s4">, </span><span class="s1">&amp;note1</span><span class="s4">, </span><span class="s1">&amp;note2</span><span class="s4">, </span><span class="s1">&amp;note3)</span><span class="s4">;</span>
+    <span class="s4">while </span><span class="s1">(note1 &lt; </span><span class="s5">0 </span><span class="s1">|| note1 &gt; </span><span class="s5">20</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;rentrer une nouvelle note pour note1. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">scanf(</span><span class="s3">&quot;%f&quot;</span><span class="s4">, </span><span class="s1">&amp;note1)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">while </span><span class="s1">(note2 &lt; </span><span class="s5">0 </span><span class="s1">|| note2 &gt; </span><span class="s5">20</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;rentrer une nouvelle pour note2. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">scanf(</span><span class="s3">&quot;%f&quot;</span><span class="s4">, </span><span class="s1">&amp;note2)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">while </span><span class="s1">(note3 &lt; </span><span class="s5">0 </span><span class="s1">|| note3 &gt; </span><span class="s5">20</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;rentrer une nouvelle note. </span><span class="s4">\r\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">scanf(</span><span class="s3">&quot;%f&quot;</span><span class="s4">, </span><span class="s1">&amp;note3)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s1">printf(</span><span class="s3">&quot;%f&quot;</span><span class="s4">, </span><span class="s1">(note1+note2+note3) / </span><span class="s5">3</span><span class="s1">)</span><span class="s4">;</span>
+
+<span class="s4">void </span><span class="s1">exo8() {</span>
+    <span class="s4">int </span><span class="s1">entier = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">const int </span><span class="s1">sept = </span><span class="s5">7</span><span class="s4">;</span>
+    <span class="s4">const int </span><span class="s1">deux = </span><span class="s5">2</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Entrez un nombre entier :&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">, </span><span class="s1">&amp;entier)</span><span class="s4">;</span>
+    <span class="s4">if </span><span class="s1">(entier % sept == </span><span class="s5">0 </span><span class="s1">&amp;&amp; entier % deux == </span><span class="s5">0</span><span class="s1">) {</span>
+        <span class="s1">printf(</span><span class="s3">&quot;c'est un multiple de 2 et de 7.&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">printf(</span><span class="s3">&quot;ressaisir un nombre entier. &quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">exo9() {</span>
+    <span class="s4">int </span><span class="s1">nbrPierre = </span><span class="s5">0</span><span class="s4">, </span><span class="s1">nbrEtage = </span><span class="s5">0</span><span class="s4">, </span><span class="s1">Pierreparetage = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Saisir le nombre de pierres disponibles : &quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">scanf(</span><span class="s3">&quot;%d&quot;</span><span class="s4">,</span><span class="s1">&amp;nbrPierre)</span><span class="s4">;</span>
+    <span class="s4">while </span><span class="s1">(nbrPierre &gt; Pierreparetage) {</span>
+        <span class="s1">Pierreparetage = Pierreparetage + (nbrEtage*nbrPierre)</span><span class="s4">;</span>
+        <span class="s1">nbrEtage++</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s1">printf(</span><span class="s3">&quot;Vous construirez une pyramide de %d etage avec %d pierres&quot;</span><span class="s4">, </span><span class="s1">nbrPierre</span><span class="s4">, </span><span class="s1">nbrEtage-</span><span class="s5">1</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+
+</pre>
+</body>
+</html>
